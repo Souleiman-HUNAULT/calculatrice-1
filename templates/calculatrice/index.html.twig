@@ -3,7 +3,7 @@
 {% block title %}Ma caculette en ligne{% endblock %}
 
 {% block body %}
-<div class="container mt-5">
+{# <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-4">
                 <div class="calculator card">
@@ -31,9 +31,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> #}
     {# // <script src="script.js"></script> #}
-    {# <div class="container mt-5">
+    <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-4">
                 <form method="post" class="calculator-form">
@@ -52,7 +52,7 @@
                         </select>
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Calculer</button>
-                </form> #}
+                </form>
                 {% for message in app.flashes('error') %}
                     <div class="alert alert-danger">{{ message }}</div>
                 {% endfor %}
