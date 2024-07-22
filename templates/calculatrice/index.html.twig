@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ma caculette en ligne{% endblock %}
+
+{% block body %}
+    <form method="post">
+        Nombre 1: <input type="text" name="nombre1"><br>
+        Nombre 2: <input type="text" name="nombre2"><br>
+        Opération: 
+        <select name="operation">
+            <option value="addition">Addition</option>
+            <option value="soustraction">Soustraction</option>
+            <option value="multiplication">Multiplication</option>
+            <option value="division">Division</option>
+        </select>
+        <button type="submit">Calculer</button>
+    </form>
+
+    {% if resultat is not null %}
+        <p>Résultat: {{ resultat }}</p>
+    {% endif %}
+{% endblock %}
